@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Stock v-for="stock in stocks"></Stock>
+    <Stock v-for="stock in stocks" :stock="stock"></Stock>
   </div>
 </template>
 
