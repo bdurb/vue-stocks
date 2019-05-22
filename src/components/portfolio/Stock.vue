@@ -9,7 +9,7 @@
       </div>
       <div class="panel-body">
         <div class="pull-left">
-          <input type="number" class="form-control" placeholder="Quantity" v-model="quantity">
+          <input type="number" class="form-control" placeholder="Quantity" v-model="quantity" :class="{danger: insufficientQuantity}" >
         </div>
         <div class="pull-right">
           <button class="btn btn-success" @click="sellStock" :disabled=" insufficientQuantity || quantity <= 0 || Math.floor(quantity) != quantity">{{ insufficientQuantity ? 'Not Enough Stock' : 'Sell'}}</button>
@@ -49,3 +49,9 @@
     }
   }
 </script>
+
+<style scoped>
+.danger {
+  border: 1px solid red;
+}
+</style>
