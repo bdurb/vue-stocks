@@ -11,7 +11,7 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
-Vue.http.options.root = "https://vue-stock-trader-ca338.firebaseio.com/"
+Vue.http.options.root = "https://vuejs-stock-trader-a7f2d.firebaseio.com/"
 
 Vue.filter('currency', (value) => {
   return '$' + value.toLocaleString()
