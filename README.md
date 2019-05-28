@@ -1,5 +1,13 @@
 # vue-stocks
 
+Vue trading simulator app featuring:
+Vue, Vuex, Router and async data storage via firebase
+
+ability to save data, load data, and basic algorythm to simulate day to day
+market rate change. 
+
+# database currently not active
+
 ## Project setup
 ```
 npm install
